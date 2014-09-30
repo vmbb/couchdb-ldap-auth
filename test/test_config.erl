@@ -3,7 +3,7 @@
 -export([get_config/3]).
 
 get_config("ldap_auth", "UseSsl", _) -> "false";
-get_config("ldap_auth", "LdapServer", _) -> "atlas.northhorizon.local";
+get_config("ldap_auth", "LdapServers", _) -> "atlas.northhorizon.local";
 get_config("ldap_auth", "BaseDN", _) -> "DC=northhorizon,DC=local";
 get_config("ldap_auth", "SearchUserDN", _) -> "CN=ldapsearch,CN=Users,DC=northhorizon,DC=local";
 get_config("ldap_auth", "SearchUserPassword", _) -> "Welcome1";
